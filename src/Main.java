@@ -1,17 +1,17 @@
 import personas.Empleados;
 import personas.tipos.TipoDocumento;
 import personas.tipos.TipoPermiso;
+import vehiculos.Vehiculo;
 
 import java.util.ArrayList;
 
 public class Main {
-    private static ArrayList<Empleados> empleados;
+    private static ArrayList<Empleados> empleados = new ArrayList<>();
+    private static ArrayList<Vehiculo> vehiculo = new ArrayList<>();
 
     public static void main(String[] args) {
         generarEmpleados();
-        System.out.println("********************************************");
-        System.out.println("*************CONCESIONARIO UDEV*************");
-        System.out.println("********************************************");
+        menuPrincipal();
     }
 
     private static void generarEmpleados(){
@@ -30,5 +30,16 @@ public class Main {
         empleados.add(miEmpleadito1);
         empleados.add(miEmpleadito2);
         empleados.add(miEmpleadito3);
+    }
+
+    private static void menuPrincipal(){
+        System.out.println("********************************************");
+        System.out.println("*************CONCESIONARIO UDEV*************");
+        System.out.println("********************************************");
+
+        String mensaje = "Elija una opción: \n"
+                + "1. Venta de vehiculo \n"
+                + "2. Ingreso de vehiculo \n"
+                + "3. Salir";
     }
 }
