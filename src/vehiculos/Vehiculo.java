@@ -16,4 +16,44 @@ public class Vehiculo {
         this.color = color;
         this.precio = precio;
     }
+
+    public TipoMarca getTipoMarca() {
+        return tipoMarca;
+    }
+
+    public void setTipoMarca(TipoMarca tipoMarca) {
+        this.tipoMarca = tipoMarca;
+    }
+
+    public int getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(int modelo) {
+        this.modelo = modelo;
+    }
+
+    public String getPlaca() {
+        return placa;
+    }
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public int getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
+    }
 }
